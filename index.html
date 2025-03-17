@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aarti Chaudhary - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Aarti Chaudhary</h1>
+      <img
+        class="profile-img"
+        src="/img/Aarti Chaudhary1.png"
+        alt="Profile Image"
+      />
+      <h3>Web Developer & UI/UX Designer</h3>
+      <p>
+        I’m an aspiring software developer and graphic designer dedicated to
+        crafting innovative solutions that bridge technology and design. My
+        academic background in Mathematics has equipped me with strong
+        analytical skills, which I apply to problem-solving in the tech world.
+      </p>
+      <p>
+        I have experience in developing web applications using React and NestJS,
+        and I'm continually seeking to grow my skill set and take on new
+        challenges. My goal is to contribute to projects that make a positive
+        impact on users’ lives. In my free time, I enjoy learning new
+        programming languages and keeping up with industry trends
+      </p>
+
+      <div class="social-links">
+        <a href="https://github.com/aartic" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/aartic" target="_blank">LinkedIn</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Projects</h2>
+      <div>
+        <h3>Luetek Academy Application</h3>
+        <p>
+          Frontend Development -
+          <a href="https://academy.luetek.com/home">Visit Luetek Academy</a>
+        </p>
+        <ul>
+          <li>
+            <strong>PDF Reader for Children’s Books:</strong> Integrated a PDF
+            reader, enabling seamless reading of children's books and
+            educational content directly on the platform
+          </li>
+          <li>
+            <strong>Course Creation and Material Management:</strong> Developed
+            features for instructors to create courses and upload materials in
+            Markdown format, providing a flexible, structured content management
+            experience.
+          </li>
+          <li>
+            <strong>Coding Challenges:</strong> Added coding challenges to
+            reinforce learning, allowing users to test their understanding and
+            application of key concepts.
+          </li>
+        </ul>
+        <button onclick="openCarousel()">Images</button>
+
+        <div class="carousel-container" id="carousel">
+          <img
+            id="carousel-image"
+            src="https://via.placeholder.com/600x400"
+            alt="Project Screenshot"
+          />
+          <div class="carousel-controls">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+          </div>
+          <button class="close-btn" onclick="closeCarousel()">Close</button>
+        </div>
+
+        <h3>Stock Screener Application</h3>
+        <p>
+          Full-Stack Development -
+          <a href="https://stocks.luetek.com/stocks">Visit Stock Screener</a>
+        </p>
+        <ul>
+          <li>
+            Built the application to help users analyze and filter stocks based
+            on various financial metrics and criteria.
+          </li>
+          <li>Developed a REST API-based server and UI design elements.</li>
+          <li>
+            Implemented stock analysis features, including buy/sell/hold
+            recommendations and key metric visualization using ChartJS.
+          </li>
+          <li>
+            Designed web architecture with layered architecture, controllers,
+            services, DTOs, and cron jobs. Wrote unit tests for APIs to ensure
+            functionality of key features.
+          </li>
+          <li>Utilized TypeORM for efficient data modeling and management.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>
+          <strong>Programming:</strong> C++, JavaScript, Python, TypeScript
+        </li>
+        <li><strong>Web Technologies:</strong> HTML, CSS, React, NestJs</li>
+        <li><strong>Database:</strong> TypeORM, SQL</li>
+        <li><strong>Tools:</strong> Photoshop, Procreate, Illustrator</li>
+        <li><strong>Concepts:</strong> Data Structures, Algorithms, Testing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <h3>Contour Education</h3>
+      <p>
+        <strong>Graphic Designer & Quality Consultant</strong> (Sept 2023 –
+        Present)
+      </p>
+      <ul>
+        <li>Ensuring compliance with graphic standards & quality checks.</li>
+      </ul>
+      <p><strong>Graphic Design Team Leader</strong> (Oct 2022 – Aug 2023)</p>
+      <ul>
+        <li>Led a team, assigned tasks & reviewed deliverables.</li>
+      </ul>
+      <p><strong>Graphic Design Intern</strong> (May 2022 – Sept 2022)</p>
+      <ul>
+        <li>Created technical visuals & scientific diagrams.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Master of Science (Mathematics)</strong> - Banaras Hindu
+          University (2015 – 2017)
+        </li>
+        <li>
+          <strong>Bachelor of Science (Mathematics)</strong> - Delhi University
+          (2011 – 2014)
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form
+        action="https://formsubmit.co/aartic88@gmail.com"
+        method="POST"
+        onsubmit="showMessage(event)"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p class="message" id="confirmationMessage">
+        Thank you! Your message has been sent.
+      </p>
+    </section>
+
+    <p class="datetime" id="datetime"></p>
+  </body>
+</html>
